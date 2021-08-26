@@ -1,6 +1,3 @@
-
-/*Assignment*/
-
 CREATE TABLE SalesPerson(
 			EmployeeId INT NOT NULL PRIMARY KEY,
 			EmployeeName VARCHAR(100),
@@ -18,4 +15,3 @@ CREATE TABLE Total_sales(
 			 Sold INT NOT NULL,
 			 FOREIGN KEY(SoldBy) REFERENCES SalesPerson(EmployeeId),
 			 FOREIGN KEY(ModelId)REFERENCES CarsDetails(ModelId));
-
