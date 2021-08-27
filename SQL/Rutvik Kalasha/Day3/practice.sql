@@ -1,3 +1,5 @@
+/*String Function*/
+
 SELECT CHAR(65) 
 
 SELECT CHARINDEX('v', 'Rutvik')
@@ -46,12 +48,48 @@ SELECT STR(185);
 
 SELECT STUFF('SQL Tutorial', 1, 3, 'HTML');
 
-SELECT SUBSTRING('SQL Tutorial', 1, 3);
+SELECT SUBSTRING('Rutvik Kalasha', 1, 3);
 
 SELECT TRANSLATE('Monday', 'Monday', 'Sunday');
 
-SELECT TRIM('     SQL Tutorial!     ')
+SELECT TRIM('     Rutvik Kalasha     ')
 
-SELECT UNICODE('Atlanta');
+SELECT UNICODE('Rutvik');
 
-SELECT UPPER('SQL Tutorial is FUN!');
+SELECT UPPER('Rutvik Kalasha');
+
+/*Mathematical Function*/
+
+SELECT ABS(-6);
+
+SELECT MOD(9,5);
+
+SELECT SIGN(10);
+
+SELECT FLOOR(5.7);
+
+SELECT POWER(2,5);
+
+SELECT ROUND(5.7);
+
+SELECT SQRT(9);
+
+SELECT ASIN(0);
+
+SELECT ACOS(1);
+
+SELECT ATAN(0);
+
+SELECT SIN(0);
+
+SELECT COS(0);
+
+SELECT TAN(0);
+
+/*Date Functions*/
+
+SELECT NOW();
+
+SELECT CURDATE();
+
+SELECT CURTIME();
