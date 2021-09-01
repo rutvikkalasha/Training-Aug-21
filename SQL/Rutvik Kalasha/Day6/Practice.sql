@@ -1,3 +1,5 @@
+--Sub Queries
+
 (1).SELECT FirstName, LastName, Salary FROM Employees 
 WHERE Salary > (SELECT Salary FROM Employees WHERE LastName = 'Bull');
 
