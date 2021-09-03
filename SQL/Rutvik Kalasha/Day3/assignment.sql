@@ -5,18 +5,11 @@ FROM Employees WHERE FirstName LIKE 'A%' OR FirstName LIKE 'J%' OR FirstName LIK
 
 /*Write a query to display the FirstName and Salary for all employees. Format the salary to be 10 characters long, left-padded with the $ symbol. Label the column SALARY.*/
 
-SELECT FirstName,'SALARY' = RIGHT(REPLICATE('$',10-LEN(Salary)) + 
-CAST(Salary AS VARCHAR),10) 
-from Employees;
+SELECT FirstName,'SALARY' = RIGHT(REPLICATE('$',10-LEN(Salary)) + CAST(Salary AS VARCHAR),10) FROM Employees;
 
 /*Write a query to display the employees with their code, first name, last name and hire date who hired either on seventh day of any month or seventh month in any year.*/
 
-SELECT EmployeeID,FirstName,LastName,HireDate FROM Employees 
-WHERE
-DATEPART(dd,HireDate)=07
-OR
-DATEPART(MM,HireDate)=07 
-ORDER BY HireDate;
+SELECT EmployeeID,FirstName,LastName,HireDate FROM Employees WHERE DATEPART(dd,HireDate)=07 OR DATEPART(MM,HireDate)=07 ORDER BY HireDate;
 
 /*Write a query to display the length of first name for employees where last name contains character ‘c’ after 2nd position.*/
 SELECT LEN(FirstName) FROM EMPLOYEES WHERE CHARINDEX('c',LastName)>2;

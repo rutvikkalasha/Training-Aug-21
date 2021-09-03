@@ -1,6 +1,6 @@
 /*Write a SQL statement to create a table named countries including columns CountryId, CountryName and RegionId and make sure that no countries except Italy, India and China will be entered in the table. and combination of columns CountryId and RegionId will be unique.*/
 
- CREATE TABLE country (
+CREATE TABLE country (
 CountryId INT NOT NULL UNIQUE DEFAULT '',
 Country_Name VARCHAR (50) CHECK (Country_Name IN ('Italy', 'India', 'China')),
 Region_Id INT NOT NULL UNIQUE

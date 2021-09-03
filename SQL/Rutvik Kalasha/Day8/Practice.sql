@@ -52,11 +52,3 @@ Select * from Employees WHERE EmployeeID = 100
 ELSE
 Select * from Employees WHERE EmployeeID != 101
 
---aSSIGNMENT
-SELECT Department
-CASE
-	WHEN 'Banking' THEN 'Bank Dept'
-	WHEN 'Insurance' THEN 'Insurance Dept'
-	WHEN 'Services' THEN 'Services Dept'
-END AS BankDetails
-FROM Employee;
