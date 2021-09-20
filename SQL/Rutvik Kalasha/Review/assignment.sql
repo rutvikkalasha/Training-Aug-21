@@ -58,5 +58,5 @@ SELECT Em_Name,Designation,Salary,city FROM officestaff INNER JOIN Staff_Address
 SELECT E.city
 FROM officestaff M
 INNER JOIN Staff_Address E ON E.AddresID = M.AddresID
-GROUP BY E.CityID
+GROUP BY E.city
 HAVING count(E.city) >= 3;
