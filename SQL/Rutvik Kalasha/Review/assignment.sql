@@ -55,7 +55,7 @@ SELECT * FROM officestaff WHERE Salary > (SELECT Salary from officestaff where E
 SELECT Em_Name,Designation,Salary,city FROM officestaff INNER JOIN Staff_Address ON officestaff.AddresID = Staff_Address.AddresID;
 
 --List those City Name where 3 or more than 3 people resides.
-SELECT E.city
+SELECT M.Em_Name
 FROM officestaff M
 INNER JOIN Staff_Address E ON E.AddresID = M.AddresID
 GROUP BY E.city
