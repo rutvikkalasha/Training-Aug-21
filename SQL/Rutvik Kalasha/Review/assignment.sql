@@ -14,13 +14,13 @@ SELECT * FROM officestaff WHERE Salary BETWEEN 5000 AND 100000;
 SELECT LOWER(Em_Name) FROM officestaff;
 
 --List Name of all the office staff members in following format: For example, if name is "umeshbhai" then display it in the format "Umeshbhai".
-SELECT * FROM officestaff WHERE LOWER(Em_Name) = 'umeshbhai'
+SELECT * FROM officestaff WHERE upper(Em_Name) = 'umeshbhai'
 
 --List all the information about those people who works for "Nileshbhai".
 SELECT  * FROM officestaff WHERE boss_name = 'Nileshbhai'
 
 --List all the information about those members with salary greater than or equal to     Rs.3000/- or working directly under "Nileshbhai".
-SELECT * FROM officestaff WHERE Salary < 3000 OR Boss_Name = 'nileshbhai';
+SELECT * FROM officestaff WHERE Salary >= 3000 OR Boss_Name = 'nileshbhai';
 
 --List Name, Salary, Over-time Salary of all the office staff members.
 SELECT Em_Name, Salary , Over_Time_Salary FROM officestaff;
