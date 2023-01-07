@@ -1,2 +1,4 @@
-select * from demo
-select * from demo where id=1
+
+SELECT * FROM demo
+SELECT * FROM demo where id=1
+
